@@ -149,50 +149,63 @@ for row in rows:
 # ======================
 # Build Facebook Prompt
 # ======================
+
 prompt = """
-You are beauty content writer for Myanmar girls living in Japan.
+You are beauty content creator for Myanmar girls living in Japan.
 
-Write short Facebook post in casual Burmese.
+Create ONLY ONE Facebook/TikTok style post.
 
-Use these Japanese beauty words:
+Use ALL Japanese beauty vocabulary naturally in ONE post.
+
+Style:
+- Cute
+- Casual Burmese
+- Short and clean
+- TikTok/Facebook vibe
+- Emojis included
+- Sound like Myanmar beauty influencer
+
+For each word include:
+- Japanese word
+- Hiragana reading
+- Burmese meaning
+- Very short example feeling/situation
+- Small image idea
+
+Output format example:
+
+🌸 敏感肌
+(びんかんはだ)
+= အသားအရေအထိမခံတာ
+
+💬 Example:
+ရာသီဥတုပြောင်းရင် အသားယားပြီး sensitive ဖြစ်နေတယ် 🥺
+
+🖼️ Image:
+Girl scratching cheek softly
+
+--------------------------------
 """
 
+# add vocab
 for row in unused_rows:
     prompt += f"""
 
-    Japanese: {row['japanese']}
-    Reading: {row['reading']}
-    Meaning: {row['burmese']}
-    """
+Japanese: {row['japanese']}
+Reading: {row['reading']}
+Meaning: {row['burmese']}
+"""
 
-    prompt += """
-    Rules:
-    - Friendly casual Burmese
-    - Short and easy to read
-    - Add emojis
-    - Always include #JapanMakeup
-    - Add beauty hashtags
-    - Maximum 8 lines
-    """
-    
-    prompt += """
+prompt += """
 
-    For each vocabulary:
-    - Add short cute example situation
-    - Add image idea prompt
-    - Output style:
-
-    🌸 Japanese Word
-    (ひらがな)
-    = Burmese meaning
-
-    👉 Example:
-    ...
-
-    👉 Image Prompt:
-    ...
-
-    """
+IMPORTANT:
+- Make ONE combined post only
+- Do NOT create Post 1, Post 2, Post 3
+- Keep each vocab section short
+- Make it aesthetic and social-media style
+- Add hashtags at bottom
+- Include #JapanMakeup
+"""
 
 # ======================
 # Generate Facebook Post

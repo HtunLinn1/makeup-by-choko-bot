@@ -1,0 +1,7 @@
+gspread
+oauth2client
+google-generativeai
+requests
+pillow
+facebook-sdk
+google-genai

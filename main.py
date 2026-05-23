@@ -7,7 +7,7 @@ import os
 # ======================
 # Gemini client
 # ======================
-gemini_client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+gemini_client = genai.Client(api_key="")
 
 # ======================
 # Google Sheets auth
@@ -173,6 +173,25 @@ for row in unused_rows:
     - Always include #JapanMakeup
     - Add beauty hashtags
     - Maximum 8 lines
+    """
+    
+    prompt += """
+
+    For each vocabulary:
+    - Add short cute example situation
+    - Add image idea prompt
+    - Output style:
+
+    🌸 Japanese Word
+    (ひらがな)
+    = Burmese meaning
+
+    👉 Example:
+    ...
+
+    👉 Image Prompt:
+    ...
+
     """
 
 # ======================

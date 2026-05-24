@@ -7,7 +7,7 @@ import os
 # ======================
 # Gemini client
 # ======================
-gemini_client = genai.Client(api_key="")
+gemini_client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 # ======================
 # Google Sheets auth
@@ -159,7 +159,7 @@ Use ALL Japanese beauty vocabulary words provided below.
 
 Style example:
 
-ဂျပန်မှာ နေ့တိုင်း ပိုလှလာစေဖို့ စတိုးဆိုင်တွေသွားရင် မသိမဖြစ် သိထားရမယ့် beauty ဂျပန်ဝေါဟာရ (၃) ခုကို မျှဝေပေးမယ်နော် 🥰👇
+ဂျပန်မှာ နေ့တိုင်း ပိုလှလာစေဖို့ မသိမဖြစ် သိထားရမယ့် beauty ဂျပန်ဝေါဟာရ (၃) ခုကို မျှဝေပေးမယ်နော် 🥰👇
 
 🌸 日本語
 (ひらがな)

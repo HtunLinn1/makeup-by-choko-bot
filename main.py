@@ -231,6 +231,9 @@ print("===================================")
 FB_PAGE_ID = os.getenv("FB_PAGE_ID")
 FB_ACCESS_TOKEN = os.getenv("FB_ACCESS_TOKEN")
 
+print(FB_PAGE_ID)
+print(FB_ACCESS_TOKEN)
+
 url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
 
 payload = {

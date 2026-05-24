@@ -153,38 +153,43 @@ for row in rows:
 prompt = """
 You are beauty content creator for Myanmar girls living in Japan.
 
-Create ONLY ONE Facebook/TikTok style post.
+Create ONE short Facebook post.
 
-Use ALL Japanese beauty vocabulary naturally in ONE post.
+Use ALL Japanese beauty vocabulary words provided below.
 
-Style:
-- Cute
-- Casual Burmese
-- Short and clean
-- TikTok/Facebook vibe
-- Emojis included
-- Sound like Myanmar beauty influencer
+Style example:
 
-For each word include:
-- Japanese word
-- Hiragana reading
-- Burmese meaning
-- Very short example feeling/situation
-- Small image idea
+ဂျပန်မှာ နေ့တိုင်း ပိုလှလာစေဖို့ စတိုးဆိုင်တွေသွားရင် မသိမဖြစ် သိထားရမယ့် beauty ဂျပန်ဝေါဟာရ (၃) ခုကို မျှဝေပေးမယ်နော် 🥰👇
 
-Output format example:
+🌸 日本語
+(ひらがな)
+= မြန်မာအဓိပ္ပါယ်
 
-🌸 敏感肌
-(びんかんはだ)
-= အသားအရေအထိမခံတာ
+🌸 日本語
+(ひらがな)
+= မြန်မာအဓိပ္ပါယ်
 
-💬 Example:
-ရာသီဥတုပြောင်းရင် အသားယားပြီး sensitive ဖြစ်နေတယ် 🥺
+🌸 日本語
+(ひらがな)
+= မြန်မာအဓိပ္ပါယ်
 
-🖼️ Image:
-Girl scratching cheek softly
+#JapanMakeup #JapanBeauty #MyanmarBeautyInJapan
 
---------------------------------
+Rules:
+- Very short
+- Clean layout
+- No long explanations
+- No example sentences
+- No image prompts
+- Mobile friendly
+- Easy to read quickly
+- Cute Burmese tone
+- All vocab must appear immediately on screen
+- Add short intro at top
+- Add hashtags at bottom
+- Maximum 12 lines total
+
+Vocabulary:
 """
 
 # add vocab

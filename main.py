@@ -3,6 +3,7 @@ import json
 from oauth2client.service_account import ServiceAccountCredentials
 from google import genai
 import os
+import requests
 
 # ======================
 # Gemini client
@@ -226,6 +227,20 @@ response = gemini_client.models.generate_content(
 print("========== FACEBOOK POST ==========")
 print(response.text)
 print("===================================")
+
+FB_PAGE_ID = os.getenv("FB_PAGE_ID")
+FB_ACCESS_TOKEN = os.getenv("FB_ACCESS_TOKEN")
+
+url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
+
+payload = {
+    "message": response.text,
+    "access_token": FB_ACCESS_TOKEN
+}
+
+response = requests.post(url, data=payload)
+
+print(response.json())
 
 # ======================
 # Mark as posted

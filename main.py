@@ -238,6 +238,7 @@ url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
 
 payload = {
     "message": response.text,
+    "published": True,
     "access_token": FB_ACCESS_TOKEN
 }
 
